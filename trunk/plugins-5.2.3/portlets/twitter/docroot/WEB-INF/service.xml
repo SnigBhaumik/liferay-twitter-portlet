@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC " -//Liferay//DTD Service Builder 5.2.0//EN" " http://www.liferay.com/dtd/liferay-service-builder_5_2_0.dtd">
+
+<service-builder package-path="org.infoaxon.fkm.portlet.twitter">
+   
+   <author>Lalit Jugran</author>
+   
+  <namespace>twitterplugin</namespace>  
+  
+  <entity name="TwitterUsr" table="fkm_twitter" local-service="true">
+    
+    <column name="userid" type="long" primary="true"/>
+    <column name="twitterobject" type="String"/>
+    
+    
+    <finder name="Twitterobject" return-type="Collection"> 
+      <finder-column name="twitterobject"/> 
+    </finder>
+  
+  </entity>
+  
+  <exceptions> 
+    <exception>SomeException</exception> 
+  </exceptions>
+
+</service-builder>

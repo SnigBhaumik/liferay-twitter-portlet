@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config> 
+  <!-- Action Mappings -->  
+  <action-mappings> 
+    <!-- Twitter --> 
+    
+    
+    <action path="/twitter/retweet" forward="twitter.retweet"/>
+    <action path="/twitter/view" forward="twitter.view"/> 
+    <action path="/twitter/twitterPluginAction" type="org.infoaxon.fkm.portlet.twitter.action.TwitterPluginAction"> 
+      <forward name="twitter.view" path="twitter.view"/> 
+    </action>
+    
+    
+     
+    <!--<action path="/twitter/view" type="com.infoaxon.fkm.twitter.action.ViewAction"> 
+      <forward name="twitter.view" path="twitter.view"/> 
+    </action>
+    
+    <action path="/twitter/twitterplugin_action" type="com.infoaxon.fkm.twitter.action.TwitterPluginAction">
+      <forward name="twitter.twitterplugin.form" path="twitter.twitterplugin.form"/>
+      <forward name="twitter.twitterplugin.list" path="twitter.twitterplugin.list"/>
+      <forward name="twitter.twitterplugin.detail" path="twitter.twitterplugin.detail"/>
+      <forward name="twitter.twitterplugin.edit" path="twitter.twitterplugin.edit"/>
+      <forward name="twitter.view" path="twitter.view"/>
+    </action>-->
+    
+    
+   
+    
+      
+    
+  </action-mappings> 
+   
+  				<!-- Message Resources -->
+  				  
+  <message-resources parameter="content.Language_en"/>  
+  
+  				<!-- Tiles Plugin -->  
+  
+  <plug-in className="org.apache.struts.tiles.TilesPlugin"> 
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>  
+    <set-property property="moduleAware" value="true"/>  
+    <set-property property="definitions-parser-validate" value="true"/> 
+  </plug-in>
+   
+</struts-config>
