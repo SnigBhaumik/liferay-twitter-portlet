@@ -1,0 +1,1 @@
+create index IX_3050D920 on fkm_twitter (twitterobject);

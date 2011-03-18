@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalService.impl" class="org.infoaxon.fkm.portlet.twitter.service.impl.TwitterUsrLocalServiceImpl" />
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalService.velocity" class="org.springframework.aop.framework.ProxyFactoryBean" parent="baseVelocityService">
+		<property name="target" ref="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalServiceUtil" class="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalServiceUtil">
+		<property name="service" ref="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrLocalService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrService.impl" class="org.infoaxon.fkm.portlet.twitter.service.impl.TwitterUsrServiceImpl" />
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrService.velocity" class="org.springframework.aop.framework.ProxyFactoryBean" parent="baseVelocityService">
+		<property name="target" ref="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrServiceUtil" class="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrServiceUtil">
+		<property name="service" ref="org.infoaxon.fkm.portlet.twitter.service.TwitterUsrService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.persistence.TwitterUsrPersistence.impl" class="org.infoaxon.fkm.portlet.twitter.service.persistence.TwitterUsrPersistenceImpl" parent="basePersistence" />
+	<bean id="org.infoaxon.fkm.portlet.twitter.service.persistence.TwitterUsrUtil" class="org.infoaxon.fkm.portlet.twitter.service.persistence.TwitterUsrUtil">
+		<property name="persistence" ref="org.infoaxon.fkm.portlet.twitter.service.persistence.TwitterUsrPersistence.impl" />
+	</bean>
+</beans>

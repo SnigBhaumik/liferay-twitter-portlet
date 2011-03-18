@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions> 
+  						<!-- Twitter -->  
+  
+  <definition name="portlet" path="/html/portlet/twitter/template.jsp"/>  
+  
+  <definition name="twitter.view" extends="portlet"> 
+    <put name="portlet_content" value="/portlet/twitter/view.jsp"/> 
+  </definition>  
+  
+  
+  <definition name="twitter.retweet" extends="portlet"> 
+    <put name="portlet_content" value="/portlet/twitter/retweetPopUp.jsp"/> 
+  </definition>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--<definition name="twitter.twitterplugin.form" extends="portlet">
+    <put name="portlet_content" value="/portlet/twitter/twitterplugin_form.jsp"/>
+  </definition>
+  
+  <definition name="twitter.twitterplugin.list" extends="portlet">
+    <put name="portlet_content" value="/portlet/twitter/twitterplugin_list.jsp"/>
+  </definition>
+  
+  <definition name="twitter.twitterplugin.detail" extends="portlet">
+    <put name="portlet_content" value="/portlet/twitter/twitterplugin_detail.jsp"/>
+  </definition>
+  
+  <definition name="twitter.twitterplugin.edit" extends="portlet">
+    <put name="portlet_content" value="/portlet/twitter/twitterplugin_edit.jsp"/>
+  </definition>-->
+
+</tiles-definitions>
