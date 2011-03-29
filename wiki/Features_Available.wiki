@@ -9,3 +9,8 @@
   * Followers List with count.
   * We can follow/Unfollow our followers.
   * Friends List(accounts which the logged in user is following) with count.
+  * We can Unfollow our friends.
+  * List of My Tweets.
+  * List of Retweets By me.
+  * List of @ mentions.
+  * List of Twitter Trends.
