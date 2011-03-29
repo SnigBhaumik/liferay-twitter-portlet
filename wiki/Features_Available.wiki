@@ -1,14 +1,14 @@
 =Following features are available in Twitter Portlet.=
 
 
-  * Friends Time Line(Tweets) at home page.
-  * Tweet facility with tweet button at home page(only 140 characters    are allowed in tweet).
-  * Reply to a tweet.
+  * Tweet facility on button click on home page(max. 140 chars. allowed)
+  * Reply a tweet
   * Delete a tweet.
-  * Sign In as a different user.
-  * Followers List with count.
-  * We can follow/Unfollow our followers.
-  * Friends List(accounts which the logged in user is following) with count.
+  * Sign In as a different user
+  * Followers list with count.
+  * Can follow/unfollow our followers.
+  * Friends list with count.
+  * View friends Tweets at home page
   * We can Unfollow our friends.
   * List of My Tweets.
   * List of Retweets By me.
