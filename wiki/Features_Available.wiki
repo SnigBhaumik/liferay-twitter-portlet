@@ -1,7 +1,7 @@
 =Following features are available in Twitter Portlet=
 
 
-  * FriendsTimeLine(Tweets) at home page.
+  * FriendsTime Line(Tweets) at home page.
   * Tweet facility with tweet button at home page(only 140 characters    are allowed in tweet).
   * Reply to a tweet.
   * Delete a tweet.
