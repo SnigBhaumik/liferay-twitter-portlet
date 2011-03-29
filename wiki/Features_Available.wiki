@@ -1,4 +1,4 @@
-=Following features are available in Twitter Portlet=
+=Following features are available in Twitter Portlet.=
 
 
   * FriendsTime Line(Tweets) at home page.
