@@ -11,14 +11,14 @@
  1. Extract the zip file in your desired drive.  e.g. E:/project/plugins-5.2.3
 
  2. Plugins SDK Configuration
-   1. You will notice that the Plugins SDK contains a file called build.properties.This file contains the settings for where you have Liferay installed and where your deployment folder is going to be. However, you should not customize this file. Instead, create a new file in the same folder called build.${user.name}.properties, where ${user.name} is your user ID on your machine. For example, if your user ID is "abc" then create a file with name build.${abc}.properties. Below is the example of setting:
+   * You will notice that the Plugins SDK contains a file called build.properties.This file contains the settings for where you have Liferay installed and where your deployment folder is going to be. However, you should not customize this file. Instead, create a new file in the same folder called build.${user.name}.properties, where ${user.name} is your user ID on your machine. For example, if your user ID is "abc" then create a file with name build.${abc}.properties. Below is the example of setting:
   _ *Example for server settings* _
    app.server.type=tomcat<br />
    app.server.dir= E:/project/liferay-portal-5.2.3/tomcat-5.2.3<br />
    app.server.deploy.dir=${app.server.dir}/webapps<br />
    app.server.lib.global.dir=${app.server.dir}/lib/ext<br />
    app.server.portal.dir=${app.server.dir}/webapps/ROOT<br />
-  2. The main development options available in Liferay Plugins SDK-5.2.3 are portlets, themes, <br />layout templates, hooks. Each option in the Liferay Plugins SDK contains scripts for generating that type of plugin.New plugins are placed in their own subdirectory of the appropriate plugin directory.
+  * The main development options available in Liferay Plugins SDK-5.2.3 are portlets, themes, <br />layout templates, hooks. Each option in the Liferay Plugins SDK contains scripts for generating that type of plugin.New plugins are placed in their own subdirectory of the appropriate plugin directory.
     e.g. a new portlet called *"liferay-twitter-portlet"* would reside in *plugins-5.2.3/portlets/liferay-twitter-portlet*.
    Check out *"liferay-twitter-portlet"* using url          http://liferay-twitter-portlet.googlecode.com/svn/trunk/ and get inside the ${Your-check-out-project-home}/plugins-5.2.3/portlets e.g E:/test/portlet/plugins-5.2.3/portlets. Copy twitter folder to your plugins-5.2.3 portlets folder. Customize as per your requirement and deploy it.
 
